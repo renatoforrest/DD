@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hollow Depths</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #050508; overflow: hidden; }
+  #game-wrapper { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; }
+  #game { line-height: 0; }
+  canvas { display: block; }
+  #fps {
+    position: fixed; top: 8px; left: 10px;
+    font: 12px/1 monospace; color: #7fd67f;
+    text-shadow: 0 1px 2px #000;
+    pointer-events: none; z-index: 10;
+  }
+</style>
+</head>
+<body>
+<div id="game-wrapper"><div id="game"></div></div>
+<div id="fps">-- FPS</div>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+<script src="src/run.js"></script>
+<script src="src/bg.js"></script>
+<script src="src/hud.js"></script>
+<script src="src/player.js"></script>
+<script src="src/enemy.js"></script>
+<script src="src/scenes/BootScene.js"></script>
+<script src="src/scenes/TravelScene.js"></script>
+<script src="src/scenes/CorridorScene.js"></script>
+<script src="src/scenes/RoomScene.js"></script>
+<script src="src/scenes/BattleScene.js"></script>
+<script src="src/scenes/EndScene.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
